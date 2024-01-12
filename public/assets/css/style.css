@@ -1,0 +1,25 @@
+
+    textarea.form-control {
+        min-height: calc(8.5em + 0.75rem + 2px);
+        color: #fff;
+        background: #dcdcdc1a;
+    }
+
+    .form-control:focus {
+        background-color: #ffffff00;
+        color: #fff;
+        border-color: #ffffff;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem #86b7fe00;
+    }
+
+    .nav-pills .nav-link {
+        border-radius: 0;
+        color: #12ff91;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        border-bottom: 1px solid #ffff;
+        background-color: #ffffff00;
+    }

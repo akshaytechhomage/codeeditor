@@ -1,0 +1,92 @@
+<%- include('../partials/header') %>
+    <div class="row m-md-3">
+        <div class="col-md-3 d-flex flex-column mb-2 rounded bg-dark text-light">
+            <div class="p-3">
+                <h5 class="text-center pb-2" style="color:#ffffff96;">Problem</h5>
+                <h6 style="background-color: #282a36;">1 - Integers SUM</h6>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex justify-content-between  bg-dark  p-2">
+                <div class="col-12 w-25">
+                    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                    <select class="form-select" id="inlineFormSelectPref">
+                        <option value="">Select Languages</option>
+                        <option value="Python">Python</option>
+                        <option value="Cpp">C++</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success">Code Editor</button>
+                    <button type="button" id="run" class="btn btn-success"><i class="bi bi-play-fill"></i></button>
+                </div>
+            </div>
+
+            <div class="d-flex mb-2">
+                <textarea type="text" id="ceditor" class="form-control "></textarea>
+            </div>
+
+        </div>
+        <div class="col-md-3 mb-2 d-flex flex-column rounded bg-dark  pt-2 text-light">
+            <div class="nav nav-pills bg-dark-subtle" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Problem</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false" title="Run code here">Test</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false" title="Check all test cases">Submit</button>
+            </div>
+            <div class="tab-content mt-3 px-2" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">
+                    <h4>Integers SUM</h4>
+                    <p>Read two numbers as input and print the sum of the two given numbers.The output has to be 900</p>
+                    <div class="px-2" style="background-color: #282a36;">
+                        <pre>Ex. 800 100</pre>
+                        </div>
+                    <div class="px-2" style="background-color: #282a36;">
+                        <pre><b>Output:</b> 900 </pre>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                    tabindex="0">
+                    <label for="Input" class="text-light mt-4 mb-2">Input</label>
+                    <textarea type="text" id="input" class="form-control mb-5"
+                        placeholder="Input for the program ( Optional )"></textarea>
+
+
+                    <label for="Output" class="text-light mb-2">Output</label>
+                    <textarea readonly type="text" id="output" class="form-control "
+                        placeholder="Click on Run button to see the output "></textarea>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                    tabindex="0">
+                    <p id="msg">Please use the 'SUBMIT' button at the bottom right corner to submit and see the results!</p>
+
+
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Test Case</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Languages</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabb">
+                           
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-end mt-2">
+            <button type="button" id="submitTestButton" class="btn btn-outline-success">Submit</button>
+        </div>
+    </div>
+<%- include('../partials/footer') %>
